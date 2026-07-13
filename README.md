@@ -58,12 +58,12 @@ The objectives of this project was to:
 ## Architecture
 
 ## Azure Landing Zone Architecture 
-![alt text](terraform/images/architecture-diagram.png)
+![Azure Landing Zone Architecture](images/architecture-diagram.png)
 
 
 ### Network Design
 
-![alt text](terraform/images/subnets.png)
+![Subnet Layout](images/subnets.png)
 | Resource | Configuration |
 |----------|---------------|
 | Resource Group | rg-azure-portfolio-dev-eastus-001 |
@@ -83,16 +83,16 @@ The objectives of this project was to:
 
 ### Windows Management VM
 
-![alt text](terraform/images/windows-vm.png)
+![Windows Management VM](images/windows-vm.png)
 
 ---
 
 ### Ubuntu Application VM
 
-![alt text](terraform/images/linux-vm.png)
+![Ubuntu Application VM](images/linux-vm.png)
 
 ## Azure Bastion    
-![alt text](terraform/images/bastion.png)
+![Azure Bastion](images/bastion.png)
 
 ### Network Security Groups
 
@@ -101,11 +101,11 @@ Each subnet has its own dedicated Network Security Group (NSG) to enforce networ
 | NSG | Rules |
 |-----|-------|
 | Management NSG | Allows internal Virtual Network management traffic |
-![alt text](terraform/images/management-nsg.png)
+![Management NSG](images/management-nsg.png)
 | Web NSG | Allows HTTP (80) and HTTPS (443) from the Internet |
-![alt text](terraform/images/web-nsg.png)
+![Web NSG](images/web-nsg.png)
 | Application NSG | Allows TCP 8080 traffic only from the Web subnet |
-![alt text](terraform/images/application-nsg.png)
+![Application NSG](images/application-nsg.png)
 
 
 ---
