@@ -1,0 +1,14 @@
+location            = "East US"
+environment         = "Dev"
+owner               = "Your Name"
+project_name        = "Azure Enterprise Portfolio"
+resource_group_name = "rg-azure-portfolio-dev-eastus-001"
+vnet_name           = "vnet-azure-portfolio-dev-eastus-001"
+
+windows_vm_name = "vm-win-mgmt-001"
+linux_vm_name   = "vm-linux-app-001"
+
+windows_vm_size = "Standard_F2ads_v7"
+linux_vm_size   = "Standard_F1ads_v7"
+
+admin_username = "azureadmin"
