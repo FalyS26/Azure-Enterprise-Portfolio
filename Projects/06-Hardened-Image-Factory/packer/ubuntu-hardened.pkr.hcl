@@ -25,7 +25,7 @@ source "azure-arm" "ubuntu_hardened" {
   image_offer     = "0001-com-ubuntu-server-jammy"
   image_sku       = "22_04-lts-gen2"
 
-  location = "East US"
+ build_resource_group_name = "rg-imagefactory-prod-eastus-001"
   vm_size = "Standard_D2as_v7"
 
   shared_image_gallery_destination {
