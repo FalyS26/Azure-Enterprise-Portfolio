@@ -11,6 +11,10 @@ variable "subscription_id" {
   type = string
 }
 
+variable "image_version" {
+  type = string
+}
+
 source "azure-arm" "ubuntu_hardened" {
   subscription_id = var.subscription_id
 
@@ -29,7 +33,7 @@ source "azure-arm" "ubuntu_hardened" {
     resource_group = "rg-imagefactory-prod-eastus-001"
     gallery_name   = "acgenterpriseimages001"
     image_name     = "ubuntu-hardened-base"
-    image_version  = "1.0.0"
+    image_version = var.image_version
   }
 }
 
